@@ -12,7 +12,52 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.flex-w,
+.flex-l,
+.flex-r,
+.flex-c,
+.flex-sa,
+.flex-sb,
+.flex-t,
+.flex-b,
+.flex-m,
+.flex-str,
+.flex-c-m,
+.flex-c-t,
+.flex-c-b,
+.flex-c-str,
+.flex-l-m,
+.flex-r-m,
+.flex-sa-m,
+.flex-sb-m,
+.flex-col-l,
+.flex-col-r,
+.flex-col-c,
+.flex-col-str,
+.flex-col-t,
+.flex-col-b,
+.flex-col-m,
+.flex-col-sb,
+.flex-col-sa,
+.flex-col-c-m,
+.flex-col-l-m,
+.flex-col-r-m,
+.flex-col-str-m,
+.flex-col-c-t,
+.flex-col-c-b,
+.flex-col-c-sb,
+.flex-col-c-sa,
+.flex-row,
+.flex-row-rev,
+.flex-col,
+.flex-col-rev,
+.dis-flex {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

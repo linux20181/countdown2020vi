@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-
-ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+import Countdown from 'react-countdown-now';
+import HappyNewYear from './HappyNewYear';
+import Time from './Time';
+const renderer = ({days, hours, minutes, seconds ,completed }) => {
+    if(completed){
+       return <HappyNewYear />
+    }else{
+       return <Time days = {days} hours={hours} minutes = {minutes} seconds = {seconds}  completed ={completed}/>
+    }
+}
+ReactDOM.render(
+  (
+  <Countdown date={Date.now() + 60000} renderer= {renderer} > 
+    </Countdown>
+  ),
+  document.getElementById('root')
+);
+//'2020-01-01T11:03:50' renderer= {renderer}
