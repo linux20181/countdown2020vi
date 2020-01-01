@@ -30,12 +30,11 @@ class HappyNewYear extends React.Component {
              <h3 class="l1-txt1 txt-center p-b-25">
 			        	Happy New Year 2020
 		      	</h3>
-            <Fireworks {...fxProps} />
            <ReactAudioPlayer
             src={audio}
-            autoPlay = "true" 
-                  
+            autoPlay = "true"                   
             />
+            <Fireworks {...fxProps} />
         </div>
      )
  }
